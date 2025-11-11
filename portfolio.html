@@ -1,0 +1,269 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEBSITE</title>
+    <style>
+    
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(67, 66, 66, 0.717);
+}
+
+nav{
+    background-color: black;
+    color: rgb(55, 200, 22);
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.nav-options a{
+    color:rgb(55, 200, 22);
+    font-size: large;
+}
+.nav-options a:hover{
+    color:white;
+    border: 2px solid white;
+}
+
+.nav-options a:active{
+    opacity: 0.6;
+    
+}
+
+.nav-name{
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-options{
+    display: flex;
+    gap: 20px;
+    margin: 10px;
+    padding: 2px;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+}
+
+.heading p{
+    font-size: 5rem;
+    font-family: cursive;
+    cursor: pointer;
+    color: rgb(55, 200, 22);
+    transition:ease-in-out 1.25s;
+}
+.heading p:hover{
+    border: 2px solid wheat;
+    border-radius: 30px;
+    transform: rotate(360deg);
+}
+img{
+    height: 300px;
+    width: 300px;
+    margin: 200px;
+    border: 3px solid rgb(55, 200, 22);
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+h3{
+    font-size: large;
+    font-weight: bolder;
+}
+
+.box{
+    max-width: 1200px;
+    margin:60px 80px;
+    background: lightgrey;
+    border-radius: 20px;
+    padding: 40px;
+    border:3px solid rgb(55, 200, 22);
+    position: sticky;
+    top: 0;
+    bottom:20%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
+}
+
+section{
+    max-width: 900px;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    margin-left: 80px;
+    padding: 1rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+table{
+    padding: 2rem;
+    margin: 20px;
+    border: 4px solid rgba(82, 80, 80, 0.813);
+}
+
+caption{
+    font-size: large;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    margin: 0.5rem;
+    padding: 0.4rem;
+    color: darkblue;
+}
+a:hover{
+    color: red;
+}
+
+
+footer{
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(55, 200, 22);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-name">
+                Rohit Bharti
+            </div>
+            <div class="nav-options">
+                <a href="#sect_ion" class="nav-option" >About me</a>
+                <a href="#about" class="nav-option">Education</a>
+                <a href="#Education "class="nav-option">Skills</a>
+                <a href="#skills" class="nav-option"> Achievements</a>
+                <a href="#Achievements" 
+                class="nav-option">Projects</a>
+                <a href="#contact" class="nav-option">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="heading">
+            <img src="images/pfp.jpg" alt="My_pfp">
+            <p>Rohit Bharti</p>
+        </div>
+        <div class="box">
+            <section style="border: none;  text-align: center; font-size: 3rem; font-weight: bolder;" id="sect_ion">PortFolio</section>
+            <section id="about">
+                    <h3>About me :</h3>
+                    <p>
+                        Hi , My name is Rohit Bharti. I am a student at DELHI TECHNOLOGICAL UNIVERSITY  pursuing COMPUTER SCIENCE AND ENGINEERING.  
+                    </p>
+            </section>
+
+            <section id="Education">
+                <h3>Education :</h3>
+                <ul style="list-style-type:circle;">
+                    <li>I have completed my Schooling till 10th grade from SDVM, Panipat and then completed my 11th-12th from National Public School, Narela.
+                        <ul>
+                            <li>
+                                10th : 95.2%
+                            </li>  
+                            <li>12th : 88.4%
+                            </li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>
+                        I am Currently pursuing B.tech in Computer Science and Engineering from DELHI TECHNOLOGICAL UNIVERSITY of Batch (2025-2029)
+                        
+                    </li>
+                </ul>
+            </section>
+
+            <section id="Skills">
+                <h3>Skills :</h3>
+                <ol>
+                    <li>C and C++ language</li>
+                    <br>
+                    <li>HTML and CSS</li>
+                </ol>
+            </section>
+
+            <section id="Achievements">
+                <h3>Achievements :</h3>
+                <ul>
+                    <li>Under 10k rank in JEE ADVANCE</li>
+                    <li>99+ percentile in JEE Mains</li>
+                </ul>
+            </section>
+
+            <section id="projects">
+                <h3>Projects :</h3>
+                <table border="i" style="border-collapse: collapse;">
+                    <caption>Projects</caption>
+                    <tr>
+                        <th>S No.</th>
+                        <th>Project name</th>
+                        <th>About Project</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>A Calculator</td>
+                        <td>A dynamic Calculator with the help of which you can easily do any calculations
+wihin micros seconds using C/C++</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>A Mad libs Game</td>
+                        <td>An amazing game in which you have add missing words in between sentences.
+After adding all the missing words, the sentence formed seems funny using C/C++.</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Portfolio Website</td>
+                        <td>A personal portfolio showcasing my skills, projects, and contact information built
+using HTML, CSS, and JavaScript.<td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>Cloning of Website</td>
+                        <td>A clone of a webpage is a copy or replica of an existing website that mimics its design, layout, and functionality. It is often created for learning, development, or testing purposes, allowing developers to understand how a site works or to build a similar platform with modifications.</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="contact">
+                <h3>Contacts :</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/rohit-bharti-614456317/">Linkedin</a></li>
+                    <li><a href="https://github.com/R0HlT-1/My-portfolio.git">Github</a></li>
+                    <li>E-mail:<a href="mailto:rohitbharti9324@gmail.com" title="Send us an
+email">rohitbharti9324@gmail.com</a></li>
+                    <li>Tel:<a href="tel:+918168202436" title="Call us now">+91 8168202436</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <p>&copy; Rohit Bharti, All rights are reserved </p>
+        </div>
+    </footer>
+</body>
+</html>
